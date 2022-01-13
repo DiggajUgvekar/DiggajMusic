@@ -1,0 +1,116 @@
+:root{
+    --primary: rgb(83, 163, 255);
+    --light:#EEEEEE;
+    --dark: #212121;
+}
+.para{
+    color: #EEEEEE;
+}
+
+.about-container{
+    display: flex;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    padding: 50px;
+}.about-header{
+    font-size: 40px;
+    background-color: var(--dark);
+    color: var(--light);
+    padding: 20px;
+    
+}
+
+.about-information{
+    font-size: 20px; 
+    height: auto;
+}
+
+.column {
+    float: left;
+    width: 70%;
+    padding: 10px;
+     /* Should be removed. Only for demonstration */
+  }
+.about-picture{
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    height: 580px;
+    width: 580px;
+    margin: 0 0px 0 100px;
+    
+}
+.about-picture-background{
+    margin-top: 40px;
+    height: 92%;
+    width: 92%;
+    background-image: url(../../asset/Home/diggaj\ music.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: -80px;   
+}
+@media screen and (max-width:1110px) {
+    .about-header{
+        font-size: 35px;
+    }
+    .about-information{
+        font-size: 18px;
+    }    
+    .about-picture{
+        margin: 0 0px 0 80px;
+        display:block;
+    }
+}
+
+@media screen and (max-width:990px) {
+    .about-header{
+        font-size: 30px;
+    }
+    .about-information{
+        font-size: 16px;
+    }    
+    .about-picture{
+        height: 500px;
+        width: 500px;
+        margin: 0 0 0 0px;
+    }
+    .about-picture-background{
+        margin-top: 60px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .about-container{
+        flex-direction: column;
+        padding: 10px;
+        align-items: center;
+    }
+    .about-information{
+        font-size: 16px;
+    }    
+    .about-picture{
+        width: 400px;
+        height: 400px;
+        margin-left: 30px;
+    }.about-picture-background{
+        background-position: 0px;
+        margin-top: 20px;
+    }
+
+}
+@media screen and (max-width:660px) {
+    .about-header{
+        font-size: 27px;
+    }
+        .about-information{
+            height: auto;
+        } 
+    .about-picture{
+        width: 360px;
+        height: 360px;
+        margin-left: 30px;
+    }
+  
+}

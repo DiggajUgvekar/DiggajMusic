@@ -1,0 +1,167 @@
+.profile-container{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: center;
+    height: 10%;
+    min-height: fit-content;
+    background-color: rgb(153, 199, 252);
+    padding: 30px;
+}
+.profile-parent{
+    display: flex;
+    align-items: center;
+}
+
+.profile-details-name{
+    font-size: 28px;
+    
+}
+.profile-details-role{
+    display: flex;
+    flex-direction: column;
+    margin: 14px 0 0px 0;
+}
+.profile-details-role h1{
+    font-size: 45px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.primary-text{
+    color: black;
+}
+.highlighted-text{
+    color:black;
+}
+.profile-role-tagline{
+    font-size: 24px;
+    margin: 5px 0 0 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.primary-btn{
+    font-size: 20px;
+}
+
+.profile-options .primary-btn:hover{
+    
+    background-color: white;
+    color:black;
+}
+.profile-options{
+    display: flex;
+}
+.profile-options .highlighted-btn{
+
+    font-size: 20px;
+}
+.profile-options .highlighted-btn:hover{
+    
+    background-color: white;
+    color:black;
+}
+.profile-picture{
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    /* box-shadow: 0 1px 0px 0px white; */
+    border-radius: 50%;
+    height: 450px;
+    width: 450px;
+    margin: 0 0px 0 100px;
+}
+.profile-picture-background{
+    height: 92%;
+    width: 92%;
+    background-image: url(../../asset/Home/diggaj1.jpeg);
+    background-size: cover;
+    border-radius: 50%;
+    background-repeat: no-repeat;
+    background-position: right;   
+}
+.profile-picture-background:hover{
+    transform: scale(1.07);
+    transition: 1s ease-out;
+}
+.colz .colz-icon i{
+    font-size: 20px;
+    color: darkslategray;
+    padding: 8px;
+    padding-left: 0px;
+}
+.colz .colz-icon i:hover{
+    transform: scale(1.5);
+}
+
+@media screen and (max-width:1110px) {
+    
+    .profile-picture{
+        margin: 0 0px 0 80px;
+        display:block;
+    }
+    .profile-picture-background{
+        display:block;
+    }
+
+    .profile-details-name{
+        font-size: 24px;
+    }
+    .profile-details-role .primary-text{
+        font-size: 10px;
+    }
+    .profile-options .btn{
+        width: 150px;
+        font-size: 18px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+    .profile-role-tagline{
+        font-size: 22px;
+    }
+}
+@media screen and (max-width:990px) {
+    .profile-details-name{
+        font-size: 21px;
+    }
+    .profile-details-role .primary-text{
+        font-size: 10px;
+    }
+    .profile-options .btn{
+        width: 140px;
+        padding: 11px 0;
+        z-index: 700;
+    }
+    .profile-picture{
+        height: 320px;
+        width: 320px;
+        margin: 0 0 0 4px;
+    }
+}
+
+@media screen and (max-width:810px) {
+    .profile-container{
+        flex-direction: column-reverse;
+    
+    }
+    .profile-picture{
+        margin: 0 !important;
+    }
+    .profile-picture-background{
+        margin: 18px;
+    }
+    .profile-parent{
+        flex-direction: column-reverse;
+        margin: 40px 0 0 0;
+    }
+    .profile-options{
+        display: flex;
+        justify-content: space-between;
+    }
+    .profile-details{
+        margin: 25px 0 0;
+    }
+   
+    .profile-options,
+    .profile-details-role{
+        text-align: center;
+    }
+}
+
